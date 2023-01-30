@@ -13,6 +13,7 @@
     <modules>
         <module>nacos</module>
         <module>openfeign</module>
+        <module>common</module>
     </modules>
 
 
@@ -23,7 +24,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
-        <lombok.version>1.16.18</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
         <mysql.version>8.0.19</mysql.version>
         <druid.version>1.1.16</druid.version>
         <spring.boot.version>2.6.11</spring.boot.version>
@@ -72,6 +73,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

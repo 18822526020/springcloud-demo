@@ -1,15 +1,18 @@
-package com.cab.cloud;
+package com.cab.cloud.nacos.server;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class Server8001Application {
+@EnableFeignClients
+public class OpenfeignClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Server8001Application.class, args);
+
+        SpringApplication.run(OpenfeignClientApplication.class, args);
     }
 }

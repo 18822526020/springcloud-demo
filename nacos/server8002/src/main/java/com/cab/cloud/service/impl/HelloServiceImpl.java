@@ -1,18 +1,19 @@
-package com.cab.cloud.controller;
+package com.cab.cloud.service.impl;
 
 
 import com.cab.cloud.common.entity.Result;
+import com.cab.cloud.service.HelloService;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
-@RestController
-public class Controller {
+@Service
+public class HelloServiceImpl implements HelloService {
 
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("/hello")
+
+    @Override
     public Result hello() {
         return Result.success(port);
     }

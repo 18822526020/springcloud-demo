@@ -17,7 +17,7 @@
     <modules>
         <module>server8001</module>
         <module>server8002</module>
-        <module>nacos-server</module>
+        <module>openfeign-client</module>
     </modules>
 
 

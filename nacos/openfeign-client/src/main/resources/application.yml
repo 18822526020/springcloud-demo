@@ -1,14 +1,11 @@
 
 server:
-  port: 8002
+  port: 8000
 
 spring:
   application:
-    name: hello-server
+    name: openfeign-client
   cloud:
-    #nacos 配置
     nacos:
       discovery:
         server-addr: 192.168.0.120:8848
-
-

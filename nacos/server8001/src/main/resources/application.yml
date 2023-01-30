@@ -3,6 +3,12 @@ server:
   port: 8001
 
 spring:
-  appliction:
-    name: nacos-server8001
+  application:
+    name: hello-server
+  cloud:
+    #nacos 配置
+    nacos:
+      discovery:
+        server-addr: 192.168.0.120:8848
+
 
